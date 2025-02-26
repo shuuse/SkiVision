@@ -1,0 +1,23 @@
+# Ignore video files
+video/
+*.mp4
+*.avi
+*.mov
+
+# Ignore Python virtual environment
+venv/
+.env
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore logs and temporary files
+logs/
+*.log
+*.tmp
