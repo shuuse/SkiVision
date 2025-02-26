@@ -1,0 +1,8 @@
+opencv-python>=4.5.1.48
+numpy>=1.18.0
+mediapipe>=0.8.10
+deep_sort_realtime>=1.4.4
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+setuptools>=75.8.2
