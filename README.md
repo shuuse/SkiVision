@@ -2,7 +2,7 @@
 **Tracking skiers with computer vision using OpenCV, MediaPipe, and DeepSORT**  
 
 
-![SkiVision preview](images/skier.png")
+![SkiVision preview](images/skier.png)
 
 
 ## 📌 Overview  
