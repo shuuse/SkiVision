@@ -3,7 +3,7 @@
 
 
 ![SkiVision preview](images/skier.png)
-
+Skier 42 posture and direction.
 
 ## 📌 Overview  
 SkiVision is a computer vision project that detects and tracks skiers in a video using object tracking and posture estimation. It provides:  
