@@ -1,63 +1,56 @@
-# SkiVision: AI-Powered Skier Tracking
+# SkiVision 🎿👀  
+**Tracking skiers with computer vision using OpenCV, MediaPipe, and DeepSORT**  
 
-SkiVision is a computer vision project that tracks skiers in a video using object detection, DeepSORT tracking, and pose estimation with MediaPipe. The project processes a video, tracks each skier with a unique ID, and overlays posture keypoints for analysis.
+## 📌 Overview  
+SkiVision is a computer vision project that detects and tracks skiers in a video using object tracking and posture estimation. It provides:  
+- **Object tracking:** Using DeepSORT or CentroidTracker  
+- **Posture estimation:** Using MediaPipe Pose  
+- **Direction & speed visualization:** Arrows indicating movement over multiple frames  
+- **Noise filtering:** Removes detections in unwanted areas  
 
-## Features
-- **Object Detection**: Identifies moving skiers using background subtraction.
-- **DeepSORT Tracking**: Assigns a unique ID to each skier and maintains identity even when objects cross.
-- **Pose Estimation**: Uses MediaPipe to detect skier posture and overlay keypoints.
-- **Noise Filtering**: Removes false detections from camera movement.
-- **Video Export**: Saves the processed video with tracking and pose overlays.
+---
 
-## Installation
-### 1. Clone the repository:
-```sh
-git clone https://github.com/your-repo/SkiVision.git
-cd SkiVision
-```
+## 🛠️ Installation  
+Ensure you are using a Python virtual environment. Run:  
 
-### 2. Create and activate a virtual environment:
 ```sh
 python3 -m venv venv
-source venv/bin/activate  # Mac/Linux
-```
-
-### 3. Install dependencies:
-```sh
+source venv/bin/activate  # On macOS/Linux
+venv\Scripts\activate  # On Windows
 pip install -r requirements.txt
 ```
 
-## Usage
-Place your input video in the `video/` folder. Then, run the processing script:
+---
+
+## 🎥 Usage  
+### **Run tracking & posture estimation with CentroidTracker**  
+```sh
+python skivision.py
+```
+### **Run tracking with DeepSORT for more robust tracking**  
 ```sh
 python video_deepsort_pose.py
 ```
 
-The processed video will be saved in the same folder as the input video, with `_deepsort_pose` added to the filename.
+Both scripts will process the video and output a new version with tracking, posture estimation, and movement visualization.
 
-## File Structure
-```
-SkiVision/
-│── video/                    # Folder for input/output videos
-│── centroid_tracker.py        # Legacy tracker (replaced by DeepSORT)
-│── noise_filter.py            # Function to remove false detections
-│── video_deepsort_pose.py     # Main script with tracking & pose detection
-│── requirements.txt           # Dependencies
-│── README.md                  # Project documentation
-```
+---
 
-## Dependencies
-- OpenCV
-- NumPy
-- MediaPipe
-- DeepSORT (with PyTorch)
-- TorchVision
+## 🎯 Features  
+✔ **Real-time object tracking**  
+✔ **Posture estimation with MediaPipe**  
+✔ **Direction & speed visualization with arrows**  
+✔ **Noise filtering to remove false detections**  
 
-## Example Output
-The processed video will display:
-- **Bounding Boxes** (blue): Around detected skiers.
-- **Pose Keypoints** (green/red): Showing skier posture.
-- **Tracker IDs** (white): Unique IDs for each skier.
+---
 
-## License
-This project is open-source and available under the MIT License.
+## 📌 Notes  
+- Place your input videos in the `video/` folder before running scripts.  
+- The output videos will be saved in the same folder with `_pose` or `_deepsort_pose` added to the filename.  
+- For improved tracking accuracy, use `video_deepsort_pose.py` instead of `skivision.py`.  
+
+---
+
+## 🏔️ Author  
+[Your Name] - Created for skier tracking experiments.  
+Feel free to contribute and improve the project! 🚀  
