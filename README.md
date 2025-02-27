@@ -1,5 +1,5 @@
 # SkiVision 🎿👀  
-**Tracking skiers with computer vision using OpenCV, MediaPipe, and DeepSORT**  
+**Tracking skiers with computer vision using OpenCV and MediaPipe**  
 
 
 ![SkiVision preview](images/skier.png)
@@ -7,7 +7,7 @@ Skier 42 posture and direction.
 
 ## 📌 Overview  
 SkiVision is a computer vision project that detects and tracks skiers in a video using object tracking and posture estimation. It provides:  
-- **Object tracking:** Using DeepSORT or CentroidTracker  
+- **Object tracking:** Using CentroidTracker  
 - **Posture estimation:** Using MediaPipe Pose  
 - **Direction & speed visualization:** Arrows indicating movement over multiple frames  
 - **Noise filtering:** Removes detections in unwanted areas  
