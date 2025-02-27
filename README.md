@@ -31,10 +31,7 @@ pip install -r requirements.txt
 ```sh
 python skivision.py
 ```
-### **Run tracking with DeepSORT for more robust tracking**  
-```sh
-python video_deepsort_pose.py
-```
+
 
 Both scripts will process the video and output a new version with tracking, posture estimation, and movement visualization.
 
@@ -50,11 +47,10 @@ Both scripts will process the video and output a new version with tracking, post
 
 ## 📌 Notes  
 - Place your input videos in the `video/` folder before running scripts.  
-- The output videos will be saved in the same folder with `_pose` or `_deepsort_pose` added to the filename.  
-- For improved tracking accuracy, use `video_deepsort_pose.py` instead of `skivision.py`.  
+- The output videos will be saved in the same folder with `_pose`  added to the filename.    
 
 ---
 
 ## 🏔️ Author  
-[Your Name] - Created for skier tracking experiments.  
+Simen Huuse - Created for skier tracking experiments.  
 Feel free to contribute and improve the project! 🚀  
